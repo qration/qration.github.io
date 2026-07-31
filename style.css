@@ -85,6 +85,10 @@ nav {
   max-width: 100%;
 }
 
+.demo-mobile {
+  display: none;
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -186,4 +190,38 @@ tr:first-child {
 
 tr:last-child {
   border-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .nav-inner {
+    width: 90%;
+  }
+
+  .header {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .demo-mobile {
+    display: block;
+  }
+
+  .demo {
+    display: none;
+  }
 }
