@@ -1,6 +1,6 @@
 const uap = new UAParser();
-const uaOS = uap.getOS();
-const uaCPU = uap.getCPU();
+const uaOS = uap.getOS().name;
+const uaCPU = uap.getCPU().architecture;
 
 const version = '0.2.0';
 const appUrlPrefix = `https://github.com/qration/app/releases/download/${version}/Qration_${version}`;
