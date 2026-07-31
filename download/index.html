@@ -7,8 +7,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
   <script src="script.js"></script>
+  <script src="/script.js"></script>
   <title>Qration</title>
 </head>
 <body class="dark">
@@ -19,6 +21,9 @@
           <use href="/assets/qration-wordmark.svg#wordmark"/>
         </svg>
       </a>
+      <button onclick="toggleTheme()" class="icon-button">
+        <i class="ti ti-sun" id="theme-icon" style="font-size:1.25rem"></i>
+      </button>
     </div>
   </nav>
   <div class="content-wrapper">

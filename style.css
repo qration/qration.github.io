@@ -57,6 +57,7 @@ body {
 .wordmark {
   fill: var(--color-text);
   max-height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -77,6 +78,8 @@ nav {
 }
 
 .nav-inner {
+  display: flex;
+  justify-content: space-between;
   width: 70%;
   max-height: 100%;
 }
@@ -128,8 +131,17 @@ button {
   cursor: pointer;
 }
 
+button.icon-button {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
 button:hover {
   background-color: var(--color-button-primary-hover);
+}
+
+button.icon-button:hover {
+  background-color: var(--color-button-secondary-hover);
 }
 
 .download {
@@ -151,6 +163,7 @@ button:hover {
 a {
   color: var(--color-text-link);
   text-decoration: none;
+  height: 100%;
 }
 
 a:hover {
