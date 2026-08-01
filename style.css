@@ -176,7 +176,7 @@ a {
   height: 100%;
 }
 
-table a:hover {
+table a:hover, footer a:hover {
   text-decoration: underline;
 }
 
@@ -224,6 +224,13 @@ tr:last-child {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+}
+
+footer {
+  color: var(--color-text);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 600px) {
