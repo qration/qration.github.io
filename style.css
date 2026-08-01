@@ -138,7 +138,7 @@ button {
   cursor: pointer;
 }
 
-button.icon-button {
+button.secondary {
   background-color: var(--color-bg-secondary);
   color: var(--color-text);
 }
@@ -147,7 +147,7 @@ button:hover {
   background-color: var(--color-button-primary-hover);
 }
 
-button.icon-button:hover {
+button.secondary:hover {
   background-color: var(--color-button-secondary-hover);
 }
 
@@ -252,4 +252,10 @@ tr:last-child {
   .demo {
     display: none;
   }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
