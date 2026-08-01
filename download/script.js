@@ -1,6 +1,6 @@
 const uap = new UAParser();
-const uaOS = uap.getOS();
-const uaCPU = uap.getCPU();
+const uaOS = uap.getOS().name;
+const uaCPU = uap.getCPU().architecture;
 
 const version = '0.2.0';
 const appUrlPrefix = `https://github.com/qration/app/releases/download/${version}/Qration_${version}`;
@@ -67,7 +67,7 @@ window.onload = () => {
   const downloadLink = document.getElementById('download-link');
   const downloadButton = document.getElementById('download-button');
 
-  let fileObj = appFileNames['windows-x64-msi'];
+  let fileObj = null;
 
   switch (uaOS) {
     case 'Windows':
@@ -82,7 +82,7 @@ window.onload = () => {
           fileObj = appFileNames['windows-x86'];
       }
       break;
-    case 'MacOS':
+    case 'macOS':
       switch (uaCPU) {
         case 'arm':
           fileObj = appFileNames['macos-arm64'];
@@ -104,6 +104,8 @@ window.onload = () => {
       fileObj = appFileNames['android'];
   }
 
-  downloadLink.setAttribute('href', appUrlPrefix + fileObj.fileName);
-  downloadButton.innerText = `Download for ${fileObj.name}`;
+  if (fileObj != null) {
+    downloadLink.setAttribute('href', appUrlPrefix + fileObj.fileName);
+    downloadButton.innerText = `Download for ${fileObj.name}`;
+  }
 };
