@@ -1,9 +1,7 @@
-let lst = localStorage.getItem('theme')
+let lst = localStorage.getItem('theme');
 let darkModeMql = lst ? lst == 'dark' : window?.matchMedia('(prefers-color-scheme: dark)') || false;
 
-window.onload = () => {
-  updateTheme();
-}
+window.addEventListener('load', updateTheme);
 
 function toggleTheme() {
   darkModeMql = !darkModeMql;

@@ -63,7 +63,7 @@ const appFileNames = {
   },
 }
 
-window.onload = () => {
+window.addEventListener('load', () => {
   const downloadLink = document.getElementById('download-link');
   const downloadButton = document.getElementById('download-button');
 
@@ -108,4 +108,4 @@ window.onload = () => {
     downloadLink.setAttribute('href', appUrlPrefix + fileObj.fileName);
     downloadButton.innerText = `Download for ${fileObj.name}`;
   }
-};
+});
