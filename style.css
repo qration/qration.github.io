@@ -229,8 +229,15 @@ tr:last-child {
 footer {
   color: var(--color-text);
   width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 2rem;
+}
+
+.footer-inner {
+  max-width: 70%;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -240,6 +247,10 @@ footer {
 
   .nav-inner {
     width: 90%;
+  }
+
+  .footer-inner {
+    max-width: 90%;
   }
 
   .header {
@@ -273,5 +284,9 @@ footer {
   .buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .content-wrapper {
+    padding: 3rem 0rem;
   }
 }
