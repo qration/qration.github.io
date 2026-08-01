@@ -101,6 +101,9 @@ window.addEventListener('load', () => {
           break;
         case 'x86':
           fileObj = appFileNames['windows'].distributions['windows-x86'];
+          break;
+        default:
+          fileObj = appFileNames['windows'].distributions['windows-x86'];
       }
       break;
     case 'macOS':
@@ -110,6 +113,9 @@ window.addEventListener('load', () => {
           break;
         case 'amd64':
           fileObj = appFileNames['macos'].distributions['macos-x64'];
+          break;
+        default:
+          fileObj = appFileNames['macos'].distributions['macos-arm64'];
       }
       break;
     case 'Linux':
@@ -118,6 +124,9 @@ window.addEventListener('load', () => {
           fileObj = appFileNames['linux'].distributions['linux-arm64-appimage'];
           break;
         case 'amd64':
+          fileObj = appFileNames['linux'].distributions['linux-x64-appimage'];
+          break;
+        default:
           fileObj = appFileNames['linux'].distributions['linux-x64-appimage'];
       }
       break;
