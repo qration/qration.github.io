@@ -41,69 +41,98 @@
         <use href="/assets/favicon.svg#favicon"/>
       </svg>
       <a id="download-link" href="https://github.com/qration/app/releases/tag/0.2.0">
-        <button class="download" id="download-button">Download</button>
+        <button class="download">
+          <i id="download-icon" class="ti ti-download"></i>
+          <span id="download-button">Download</span>
+        </button>
       </a>
       <h2 style="text-align: center;">Or manually choose your installer:</h2>
       <table>
         <tr>
-          <th>Windows</th>
+          <th>
+            <i class="ti ti-brand-windows"></i>
+            <span>Windows</span>
+          </th>
           <td style="display:flex;flex-direction:column;">
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64_en-US.msi">
-              x64, MSI
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64_en-US.msi">
+              <i class="ti ti-download"></i>
+              <span>x64, MSI</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64-setup.exe">
-              x64, EXE
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64-setup.exe">
+              <i class="ti ti-download"></i>
+              <span>x64, EXE</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x86-setup.exe">
-              x86
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x86-setup.exe">
+              <i class="ti ti-download"></i>
+              <span>x86</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_arm64_en-US.msi">
-              AArch64, MSI
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_arm64_en-US.msi">
+              <i class="ti ti-download"></i>
+              <span>AArch64, MSI</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_arm64-setup.exe">
-              AArch64, EXE
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_arm64-setup.exe">
+              <i class="ti ti-download"></i>
+              <span>AArch64, EXE</span>
             </a>
           </td>
         </tr>
         <tr>
-          <th>MacOS</th>
+          <th>
+            <i class="ti ti-brand-finder"></i>
+            <span>MacOS</span>
+          </th>
           <td style="display:flex;flex-direction:column;">
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64.dmg">
-              x64
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64.dmg">
+              <i class="ti ti-download"></i>
+              <span>x64</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_aarch64.dmg">
-              AArch64
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_aarch64.dmg">
+              <i class="ti ti-download"></i>
+              <span>AArch64</span>
             </a>
           </td>
         </tr>
         <tr>
-          <th>Linux</th>
+          <th>
+            <i class="ti ti-brand-ubuntu"></i>
+            <span>Linux</span>
+          </th>
           <td style="display:flex;flex-direction:column;">
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_amd64.AppImage">
-              x64 (AppImage)
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_amd64.AppImage">
+              <i class="ti ti-download"></i>
+              <span>x64 (AppImage)</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64.deb">
-              x64 (Deb)
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_x64.deb">
+              <i class="ti ti-download"></i>
+              <span>x64 (Deb)</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0-1.x86_64.rpm">
-              x86_64 (RPM)
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0-1.x86_64.rpm">
+              <i class="ti ti-download"></i>
+              <span>x86_64 (RPM)</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_aarch64.AppImage">
-              AArch64 (AppImage)
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_aarch64.AppImage">
+              <i class="ti ti-download"></i>
+              <span>AArch64 (AppImage)</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_aarch64.deb">
-              AArch64 (Deb)
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_aarch64.deb">
+              <i class="ti ti-download"></i>
+              <span>AArch64 (Deb)</span>
             </a>
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0-1.aarch64.dmg">
-              AArch64 (RPM)
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0-1.aarch64.dmg">
+              <i class="ti ti-download"></i>
+              <span>AArch64 (RPM)</span>
             </a>
           </td>
         </tr>
         <tr>
-          <th>Android</th>
+          <th>
+            <i class="ti ti-brand-android"></i>
+            <span>Android</span>
+          </th>
           <td style="display:flex;flex-direction:column;">
-            <a href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_universal.apk">
-              APK
+            <a class="download-link" href="https://github.com/qration/app/releases/download/0.2.0/Qration_0.2.0_universal.apk">
+              <i class="ti ti-download"></i>
+              <span>APK</span>
             </a>
           </td>
         </tr>
